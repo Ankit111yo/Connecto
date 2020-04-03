@@ -1,4 +1,5 @@
-                                                  CONNECTO
+                                                 
+                                                 CONNECTO
 
 A social media app where a user can post text,images.
 User can like,comment in posts and can share through external apps.
@@ -8,12 +9,14 @@ Has an inbuilt messaging service.
 LIBRARIES USED:
 
 Firebase
+
 Glide
 
 
-PROJECT SETUP:
+                                             PROJECT SETUP:
 
 After cloning the project, you need to replace the existing Firebase json file with yours. Follow the steps below to add json file to your project:
+
 1:Create Firebase account and go to console ( it is present in upper right side of main website).
 
 2:Click on New Project. A dialog box opens up. Give a suitable name and click on Create Project.
