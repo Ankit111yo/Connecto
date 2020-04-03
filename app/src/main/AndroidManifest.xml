@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.example.connecto">
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@drawable/conn"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/conn"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".EmailNotVerifedActivity"></activity>
+        <activity android:name=".ChangeProfilePictureActivity"></activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ImageViewActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".MessageActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".PostActivity" />
+        <activity android:name=".EditProfileActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.connecto.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+
+    </application>
+
+</manifest>
